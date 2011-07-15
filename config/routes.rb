@@ -1,4 +1,8 @@
 Blog::Application.routes.draw do
+  get "posts/edit/:id" => 'posts#edit'
+
+  post "posts/update/:id" => 'posts#update'
+
   get "posts/show/:id" => 'posts#show'
 
   get "posts/new"

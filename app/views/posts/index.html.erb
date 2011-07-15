@@ -6,6 +6,7 @@
       <%= "#{i+1}) "%>
       <%= link_to "#{post.title}", "/posts/show/#{post.id}" %> 
     </h3>
+    <h4> <%= link_to "Editiere diesen Post", "/posts/edit/#{post.id}" %> </h4>
     <p> <%= post.content %> </p>
   </div>
 <% end %>

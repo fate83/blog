@@ -1,0 +1,14 @@
+<h1>Post editieren</h1>
+<%= form_tag "/posts/update/#{@post.id}" do %>
+  <div>
+    <h3>Titel</h3>
+    <%= text_field :post, :title%>
+  </div>
+  <div>
+    <h3>Content</h3>
+    <%= text_area :post, :content %>
+  </div>
+  <div>
+    <%= submit_tag "Aktualisieren" %>
+  </div>
+<% end %>
