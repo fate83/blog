@@ -2,7 +2,10 @@
 <%= link_to "Neuen Post erstellen", '/posts/new' %>
 <% @posts.each_with_index do |post, i| %>
   <div>
-    <h3> <%= "#{i+1}) " + post.title %> </h3>
+    <h3> 
+      <%= "#{i+1}) "%>
+      <%= link_to "#{post.title}", "/posts/show/#{post.id}" %> 
+    </h3>
     <p> <%= post.content %> </p>
   </div>
 <% end %>
