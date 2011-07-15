@@ -1,4 +1,8 @@
 Blog::Application.routes.draw do
+  get "posts/new"
+
+  post "posts/create"
+
   get "posts/index"
 
   # The priority is based upon order of creation:
